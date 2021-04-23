@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A4F99CB-4080-4F95-B084-9BE35E65A704}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Utils_Green</RootNamespace>
+    <AssemblyName>Utils_Green</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Utils_Green</RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>Library</OutputType>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>Utils_Green</RootNamespace>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="mysql.data">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\bin\Debug\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="Tamir.SharpSSH, Version=1.1.1.13, Culture=neutral, PublicKeyToken=null">
+      <HintPath>E:\DN-Thesis-Backup\GreenBackup.v.11.1\Utils_Green\bin\Debug\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\AsynchNetStreamIO.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\GrantedUser.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\FileIO.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\ClientSocket.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\IClientSocket.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\SSHConnector.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\IUser.cs" />
+    <Compile Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\GreenBackup.v.11.1%28mono%29\Utils_Green\ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
