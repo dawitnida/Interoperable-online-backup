@@ -9,7 +9,6 @@ In result to, some of the class libraries were found missing. The application ca
 
 Keywords Backup, Asynchronous Socket, Network Stream, C#, Bash, WCF, Mono
 
-
 ### Author
 [Dawit Nida](https://github.com/dawitnida)
 
